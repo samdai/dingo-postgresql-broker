@@ -10,7 +10,7 @@ import (
 
 // CredentialsHash represents the set of binding credentials returned
 type CredentialsHash struct {
-	Host              string `json:"host,omitempty"`
+	Host              string `json:"hostname,omitempty"`
 	Port              int    `json:"port,omitempty"`
 	Name              string `json:"name,omitempty"`
 	Username          string `json:"username,omitempty"`
