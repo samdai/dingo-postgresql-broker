@@ -5,12 +5,12 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/dingotiles/dingo-postgresql-broker/broker/interfaces"
-	"github.com/dingotiles/dingo-postgresql-broker/config"
-	"github.com/dingotiles/dingo-postgresql-broker/patroni"
-	"github.com/dingotiles/dingo-postgresql-broker/routing"
-	"github.com/dingotiles/dingo-postgresql-broker/scheduler"
-	"github.com/dingotiles/dingo-postgresql-broker/state"
+	"github.com/samdai/dingo-postgresql-broker/broker/interfaces"
+	"github.com/samdai/dingo-postgresql-broker/config"
+	"github.com/samdai/dingo-postgresql-broker/patroni"
+	"github.com/samdai/dingo-postgresql-broker/routing"
+	"github.com/samdai/dingo-postgresql-broker/scheduler"
+	"github.com/samdai/dingo-postgresql-broker/state"
 	"github.com/frodenas/brokerapi"
 	"github.com/pivotal-golang/lager"
 )

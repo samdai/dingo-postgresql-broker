@@ -3,11 +3,11 @@ package scheduler
 import (
 	"fmt"
 
-	"github.com/dingotiles/dingo-postgresql-broker/broker/interfaces"
-	"github.com/dingotiles/dingo-postgresql-broker/broker/structs"
-	"github.com/dingotiles/dingo-postgresql-broker/config"
-	"github.com/dingotiles/dingo-postgresql-broker/scheduler/cells"
-	"github.com/dingotiles/dingo-postgresql-broker/state"
+	"github.com/samdai/dingo-postgresql-broker/broker/interfaces"
+	"github.com/samdai/dingo-postgresql-broker/broker/structs"
+	"github.com/samdai/dingo-postgresql-broker/config"
+	"github.com/samdai/dingo-postgresql-broker/scheduler/cells"
+	"github.com/samdai/dingo-postgresql-broker/state"
 	"github.com/pivotal-golang/lager"
 )
 

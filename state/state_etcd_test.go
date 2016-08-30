@@ -8,8 +8,8 @@ import (
 	"testing"
 
 	etcd "github.com/coreos/etcd/client"
-	"github.com/dingotiles/dingo-postgresql-broker/broker/structs"
-	"github.com/dingotiles/dingo-postgresql-broker/testutil"
+	"github.com/samdai/dingo-postgresql-broker/broker/structs"
+	"github.com/samdai/dingo-postgresql-broker/testutil"
 	"github.com/pborman/uuid"
 	"golang.org/x/net/context"
 )

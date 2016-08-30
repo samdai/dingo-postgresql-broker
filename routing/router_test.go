@@ -9,8 +9,8 @@ import (
 	"golang.org/x/net/context"
 
 	etcd "github.com/coreos/etcd/client"
-	"github.com/dingotiles/dingo-postgresql-broker/broker/structs"
-	"github.com/dingotiles/dingo-postgresql-broker/testutil"
+	"github.com/samdai/dingo-postgresql-broker/broker/structs"
+	"github.com/samdai/dingo-postgresql-broker/testutil"
 )
 
 func resetEtcd(t *testing.T, prefix string) etcd.KeysAPI {

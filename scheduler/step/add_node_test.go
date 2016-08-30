@@ -4,10 +4,10 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/dingotiles/dingo-postgresql-broker/broker/structs"
-	"github.com/dingotiles/dingo-postgresql-broker/config"
-	"github.com/dingotiles/dingo-postgresql-broker/scheduler/cells"
-	"github.com/dingotiles/dingo-postgresql-broker/testutil"
+	"github.com/samdai/dingo-postgresql-broker/broker/structs"
+	"github.com/samdai/dingo-postgresql-broker/config"
+	"github.com/samdai/dingo-postgresql-broker/scheduler/cells"
+	"github.com/samdai/dingo-postgresql-broker/testutil"
 )
 
 type FakeClusterLoader struct {

@@ -3,7 +3,7 @@ package step
 import (
 	"fmt"
 
-	"github.com/dingotiles/dingo-postgresql-broker/broker/interfaces"
+	"github.com/samdai/dingo-postgresql-broker/broker/interfaces"
 	"github.com/pivotal-golang/lager"
 )
 

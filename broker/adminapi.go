@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"sync"
 
-	"github.com/dingotiles/dingo-postgresql-broker/broker/structs"
+	"github.com/samdai/dingo-postgresql-broker/broker/structs"
 	"github.com/frodenas/brokerapi"
 	"github.com/frodenas/brokerapi/auth"
 	"github.com/pivotal-golang/lager"

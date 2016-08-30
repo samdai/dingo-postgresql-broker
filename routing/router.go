@@ -6,8 +6,8 @@ import (
 	"strconv"
 
 	etcd "github.com/coreos/etcd/client"
-	"github.com/dingotiles/dingo-postgresql-broker/broker/structs"
-	"github.com/dingotiles/dingo-postgresql-broker/config"
+	"github.com/samdai/dingo-postgresql-broker/broker/structs"
+	"github.com/samdai/dingo-postgresql-broker/config"
 	"github.com/pivotal-golang/lager"
 	"golang.org/x/net/context"
 )

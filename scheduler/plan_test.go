@@ -4,11 +4,11 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/dingotiles/dingo-postgresql-broker/broker/fakes"
-	"github.com/dingotiles/dingo-postgresql-broker/broker/structs"
-	"github.com/dingotiles/dingo-postgresql-broker/config"
-	"github.com/dingotiles/dingo-postgresql-broker/state"
-	"github.com/dingotiles/dingo-postgresql-broker/testutil"
+	"github.com/samdai/dingo-postgresql-broker/broker/fakes"
+	"github.com/samdai/dingo-postgresql-broker/broker/structs"
+	"github.com/samdai/dingo-postgresql-broker/config"
+	"github.com/samdai/dingo-postgresql-broker/state"
+	"github.com/samdai/dingo-postgresql-broker/testutil"
 )
 
 func TestPlan_Steps_NewCluster_Default(t *testing.T) {

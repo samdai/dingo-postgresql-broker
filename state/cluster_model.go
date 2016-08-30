@@ -3,8 +3,8 @@ package state
 import (
 	"fmt"
 
-	"github.com/dingotiles/dingo-postgresql-broker/broker/interfaces"
-	"github.com/dingotiles/dingo-postgresql-broker/broker/structs"
+	"github.com/samdai/dingo-postgresql-broker/broker/interfaces"
+	"github.com/samdai/dingo-postgresql-broker/broker/structs"
 )
 
 // ClusterModel provides a clean .Save() wrapper around a ClusterState for a given State backend

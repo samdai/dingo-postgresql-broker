@@ -5,7 +5,7 @@ import (
 	"os"
 
 	"github.com/codegangsta/cli"
-	"github.com/dingotiles/dingo-postgresql-broker/clicmd"
+	"github.com/samdai/dingo-postgresql-broker/clicmd"
 )
 
 func main() {

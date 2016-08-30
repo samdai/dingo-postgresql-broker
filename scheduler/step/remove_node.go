@@ -3,9 +3,9 @@ package step
 import (
 	"fmt"
 
-	"github.com/dingotiles/dingo-postgresql-broker/broker/interfaces"
-	"github.com/dingotiles/dingo-postgresql-broker/broker/structs"
-	"github.com/dingotiles/dingo-postgresql-broker/scheduler/cells"
+	"github.com/samdai/dingo-postgresql-broker/broker/interfaces"
+	"github.com/samdai/dingo-postgresql-broker/broker/structs"
+	"github.com/samdai/dingo-postgresql-broker/scheduler/cells"
 	"github.com/pivotal-golang/lager"
 )
 

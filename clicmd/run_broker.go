@@ -5,7 +5,7 @@ import (
 	"os"
 
 	"github.com/codegangsta/cli"
-	"github.com/dingotiles/dingo-postgresql-broker/broker"
+	"github.com/samdai/dingo-postgresql-broker/broker"
 )
 
 // RunBroker runs the Cloud Foundry service broker API

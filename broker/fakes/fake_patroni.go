@@ -4,8 +4,8 @@ package fakes
 import (
 	"sync"
 
-	"github.com/dingotiles/dingo-postgresql-broker/broker/interfaces"
-	"github.com/dingotiles/dingo-postgresql-broker/broker/structs"
+	"github.com/samdai/dingo-postgresql-broker/broker/interfaces"
+	"github.com/samdai/dingo-postgresql-broker/broker/structs"
 )
 
 type FakePatroni struct {

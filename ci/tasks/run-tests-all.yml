@@ -9,4 +9,4 @@ inputs:
   path: broker/src/github.com/dingotiles/dingo-postgresql-broker
 
 run:
-  path: broker/src/github.com/dingotiles/dingo-postgresql-broker/ci/tasks/run-tests.sh
+  path: broker/src/github.com/samdai/dingo-postgresql-broker/ci/tasks/run-tests.sh

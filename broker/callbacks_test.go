@@ -8,9 +8,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/dingotiles/dingo-postgresql-broker/broker/structs"
-	"github.com/dingotiles/dingo-postgresql-broker/config"
-	"github.com/dingotiles/dingo-postgresql-broker/testutil"
+	"github.com/samdai/dingo-postgresql-broker/broker/structs"
+	"github.com/samdai/dingo-postgresql-broker/config"
+	"github.com/samdai/dingo-postgresql-broker/testutil"
 	"github.com/pborman/uuid"
 )
 

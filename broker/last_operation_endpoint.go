@@ -3,7 +3,7 @@ package broker
 import (
 	"fmt"
 
-	"github.com/dingotiles/dingo-postgresql-broker/broker/structs"
+	"github.com/samdai/dingo-postgresql-broker/broker/structs"
 	"github.com/frodenas/brokerapi"
 	"github.com/pivotal-golang/lager"
 )

@@ -4,7 +4,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/dingotiles/dingo-postgresql-broker/config"
+	"github.com/samdai/dingo-postgresql-broker/config"
 )
 
 func loadConfig(configPath string) (cfg *config.Config) {

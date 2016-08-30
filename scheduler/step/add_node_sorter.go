@@ -1,9 +1,9 @@
 package step
 
 import (
-	"github.com/dingotiles/dingo-postgresql-broker/broker/structs"
-	"github.com/dingotiles/dingo-postgresql-broker/scheduler/cells"
-	"github.com/dingotiles/dingo-postgresql-broker/utils"
+	"github.com/samdai/dingo-postgresql-broker/broker/structs"
+	"github.com/samdai/dingo-postgresql-broker/scheduler/cells"
+	"github.com/samdai/dingo-postgresql-broker/utils"
 )
 
 func (step AddNode) prioritizeCellsToTry(existingNodes []*structs.Node) (sorted cells.Cells, err error) {
