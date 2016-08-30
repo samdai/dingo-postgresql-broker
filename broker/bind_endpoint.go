@@ -12,7 +12,8 @@ import (
 type CredentialsHash struct {
 	Host              string `json:"hostname,omitempty"`
 	Port              int    `json:"port,omitempty"`
-	Name              string `json:"name,omitempty"`
+	Name              string `json:"name,omitempty"
+	DBName              string `json:"dbname,omitempty"``
 	Username          string `json:"username,omitempty"`
 	Password          string `json:"password,omitempty"`
 	URI               string `json:"uri,omitempty"`
@@ -60,6 +61,7 @@ func (bkr *Broker) bind(instanceID structs.ClusterID, bindingID string, details 
 			Port:     publicPort,
 			Username: appUsername,
 			Password: appPassword,
+			DBName:  "postgresql"
 			URI:      uri,
 			// JDBCURI:           jdbc,
 			SuperuserUsername: superuserUsername,
