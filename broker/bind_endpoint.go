@@ -61,7 +61,7 @@ func (bkr *Broker) bind(instanceID structs.ClusterID, bindingID string, details 
 			Port:     publicPort,
 			Username: appUsername,
 			Password: appPassword,
-			DBName:  "postgresql",
+			DBName:  "postgres",
 			URI:      uri,
 			// JDBCURI:           jdbc,
 			SuperuserUsername: superuserUsername,
