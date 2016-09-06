@@ -35,7 +35,7 @@ $ counterfeiter -o broker/fakes/fake_patroni.go  broker/interfaces/interfaces.go
 Wrote `FakePatroni` to `broker/fakes/fake_patroni.go`
 ```
 
-Playing
+Playing 
 -------
 
 Set `$BROKER_URI` to the API for your service broker.
