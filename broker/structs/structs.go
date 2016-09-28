@@ -97,6 +97,7 @@ type ClusterFeatures struct {
 	NodeCount            int      `mapstructure:"node-count"`
 	CellGUIDs            []string `mapstructure:"cells"`
 	CloneFromServiceName string   `mapstructure:"clone-from"`
+	MaxConnections       int      `mapstructure:"max-connections"`
 }
 
 type PostgresCredentials struct {
