@@ -100,7 +100,6 @@ func (cell *Cell) ProvisionNode(clusterState structs.ClusterState, logger lager.
 		Parameters: map[string]interface{}{
 			"PATRONI_SCOPE":      clusterState.InstanceID,
 			"NODE_ID":            node.ID,
-			"MAX_CONNECTIONS":    600,
 			"ADMIN_USERNAME":     clusterState.AdminCredentials.Username,
 			"ADMIN_PASSWORD":     clusterState.AdminCredentials.Password,
 			"SUPERUSER_USERNAME": clusterState.SuperuserCredentials.Username,
