@@ -12,16 +12,18 @@ type AddNode struct {
 	clusterModel   interfaces.ClusterModel
 	patroni        interfaces.Patroni
 	availableCells cells.Cells
+	features       structs.ClusterFeatures
 	logger         lager.Logger
 }
 
 // NewStepAddNode creates a StepAddNode command
 func NewStepAddNode(clusterModel interfaces.ClusterModel, patroni interfaces.Patroni,
-	availableCells cells.Cells, logger lager.Logger) Step {
+	availableCells cells.Cells, features structs.ClusterFeatures, logger lager.Logger) Step {
 	return AddNode{
 		clusterModel:   clusterModel,
 		patroni:        patroni,
 		availableCells: availableCells,
+		features:       features,
 		logger:         logger,
 	}
 }
@@ -38,6 +40,7 @@ func (step AddNode) Perform() (err error) {
 
 	existingNodes := step.clusterModel.Nodes()
 	clusterStateData := step.clusterModel.ClusterState()
+	feature := step.features
 
 	cellsToTry, err := step.prioritizeCellsToTry(existingNodes)
 	if err != nil {
@@ -49,7 +52,7 @@ func (step AddNode) Perform() (err error) {
 	// 4. Send requests to sortedCells until one says OK; else fail
 	var provisionedNode structs.Node
 	for _, cell := range cellsToTry {
-		provisionedNode, err = cell.ProvisionNode(clusterStateData, step.logger)
+		provisionedNode, err = cell.ProvisionNode(clusterStateData, feature, step.logger)
 		logCell := lager.Data{
 			"uri":  cell.URI,
 			"guid": cell.GUID,

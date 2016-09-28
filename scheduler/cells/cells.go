@@ -90,7 +90,7 @@ func (cells Cells) ContainsCell(cellID string) bool {
 	return false
 }
 
-func (cell *Cell) ProvisionNode(clusterState structs.ClusterState, logger lager.Logger) (node structs.Node, err error) {
+func (cell *Cell) ProvisionNode(clusterState structs.ClusterState, features structs.ClusterFeatures, logger lager.Logger) (node structs.Node, err error) {
 	node = structs.Node{ID: uuid.New(), CellGUID: cell.GUID}
 	provisionDetails := brokerapi.ProvisionDetails{
 		OrganizationGUID: clusterState.OrganizationGUID,
@@ -106,7 +106,7 @@ func (cell *Cell) ProvisionNode(clusterState structs.ClusterState, logger lager.
 			"SUPERUSER_PASSWORD": clusterState.SuperuserCredentials.Password,
 			"APPUSER_USERNAME":   clusterState.AppCredentials.Username,
 			"APPUSER_PASSWORD":   clusterState.AppCredentials.Password,
-			"MAX_CONNECTIONS":    600,
+			"MAX_CONNECTIONS":    features.MaxConnections,
 		},
 	}
 

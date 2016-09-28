@@ -66,17 +66,17 @@ func (p plan) steps() (steps []step.Step) {
 
 	addedNodes := false
 	for i := 0; i < p.clusterGrowingBy(); i++ {
-		steps = append(steps, step.NewStepAddNode(p.clusterModel, p.patroni, p.availableCells, p.logger))
+		steps = append(steps, step.NewStepAddNode(p.clusterModel, p.patroni, p.availableCells, p.newFeatures, p.logger))
 		addedNodes = true
 	}
 
 	replicasToBeReplaced, leaderToBeReplaced := p.nodesToBeReplaced(leaderID)
 	for _ = range replicasToBeReplaced {
-		steps = append(steps, step.NewStepAddNode(p.clusterModel, p.patroni, p.availableCells, p.logger))
+		steps = append(steps, step.NewStepAddNode(p.clusterModel, p.patroni, p.availableCells, p.newFeatures, p.logger))
 		addedNodes = true
 	}
 	if leaderToBeReplaced != nil {
-		steps = append(steps, step.NewStepAddNode(p.clusterModel, p.patroni, p.availableCells, p.logger))
+		steps = append(steps, step.NewStepAddNode(p.clusterModel, p.patroni, p.availableCells, p.newFeatures, p.logger))
 		addedNodes = true
 	}
 
