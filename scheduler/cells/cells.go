@@ -107,6 +107,7 @@ func (cell *Cell) ProvisionNode(clusterState structs.ClusterState, features stru
 			"APPUSER_USERNAME":   clusterState.AppCredentials.Username,
 			"APPUSER_PASSWORD":   clusterState.AppCredentials.Password,
 			"MAX_CONNECTIONS":    features.MaxConnections,
+			"EXTENSIONS":         features.Extensions,
 		},
 	}
 
