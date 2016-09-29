@@ -8,6 +8,7 @@ import (
 
 const (
 	defaultNodeCount = 2
+	defaultMaxConnections = 500
 
 	SchedulingStatusUnknown    = SchedulingStatus("")
 	SchedulingStatusSuccess    = SchedulingStatus("success")
@@ -117,6 +118,9 @@ func ClusterFeaturesFromParameters(params map[string]interface{}) (features Clus
 	err = mapstructure.Decode(params, &features)
 	if err != nil {
 		return
+	}
+	if features.MaxConnections == 0 {
+		features.MaxConnections = defaultMaxConnections
 	}
 	if features.NodeCount == 0 {
 		features.NodeCount = defaultNodeCount
